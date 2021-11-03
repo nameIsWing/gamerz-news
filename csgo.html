@@ -1,167 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>GamerzNews - CS:GO</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/games.css">
-    <link rel="stylesheet" href="./styles/global.css">
-</head>
-<body>
-    <header>
-        <div>
-            <a href="./index.html"><span class="logo">Gamerz</span><span class="news">News</span></a>
-        </div>
-        <nav>
-            <div class="dropdown">
-                <button><span class="active">Games</span><img src="./images/icons/arrow-down.svg" alt="arrow-down"></button>
-                <ul>
-                    <li><a href="#">CS:GO</a></li>
-                    <li><a href="./dota2.html">Dota&nbsp;2</a></li>
-                    <li><a href="./tekken.html">Tekken&nbsp;7</a></li>
-                    <li><a href="#">More...</a></li>
-                </ul>
+    <head>
+        <title>GamerzNews - CS:GO</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/games.css" />
+        <link rel="stylesheet" href="./styles/global.css" />
+        <style>
+            main::after {
+                background-image: linear-gradient(
+                        180deg,
+                        rgba(33, 35, 39, 1) 0%,
+                        rgba(16, 34, 54, 0.5) 50%,
+                        rgba(10, 21, 34, 0.25) 100%
+                    ),
+                    url("./images/csgo.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="./index.html"
+                    ><span class="logo">Gamerz</span
+                    ><span class="news">News</span></a
+                >
             </div>
-            <ul>
-                <li><a href="./about.html">About & Resources</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="site-banner">
-            <h1>CS<span class="colon">:</span><span>GO</span></h1>
-            <p>Counter-Strike: Global Offensive</p>
-        </div>
-        <div class="updates">
-            <h2>Game Updates</h2>
-            <div class="items">
-                <div class="item-1">
-                    <img src="./images/csgo/astralis.jpeg" alt="csgo">
-                    <div class="item-details">
-                        <h3>Astralis goes winless in their first day at the PGL Major Stockholm 2021</h3>
-                        <a href="#astralis">
-                            Read More
-                            <img src="./images/icons/double-arrow.svg" alt="double-arrow" height="22" width="22" />
-                        </a>
-                    </div>
-                </div>
-                <div class="item-2">
-                    <img src="./images/csgo-major.jpg" alt="csgo">
-                    <div class="item-details">
-                        <h3>How and where to watch the Stockholm Major</h3>
-                        <a href="#csgo-major">
-                            Read More
-                            <img src="./images/icons/double-arrow.svg" alt="double-arrow" height="22" width="22" />	
-                        </a>
-                    </div>
-                </div>
-                <div class="item-3">
-                    <img src="./images/csgo/griefer.jpg" alt="csgo">
-                    <div class="item-details">
-                        <h3>Valve cracks down on griefers in CS:GO update</h3>
-                        <a href="#griefer">
-                            Read More
-                            <img src="./images/icons/double-arrow.svg" alt="double-arrow" height="22" width="22" />	
-                        </a>
-                    </div>
-                </div>
-                <div class="item-4">
-                    <img src="./images/csgo/maps-pings.jpg" alt="csgo">
-                    <div class="item-details">
-                        <h3>Updates to maps and ping issue solved for CS:GO in newest patch</h3>
-                        <a href="#maps">
-                            Read More
-                            <img src="./images/icons/double-arrow.svg" alt="double-arrow" height="22" width="22" />	
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="articles">
-            <h2>Articles</h2>
-            <div class="container">
-                <article class="article-1" id="astralis">
-                    <h3>Astralis goes winless in their first day at the PGL Major Stockholm 2021</h3>
-                    <section>
-                        <img class="astralis-img" src="./images/csgo/astralis.jpeg" alt="csgo">
-                        <p>In their first day at the PGL Major Stockholm, Astralis fell short in both of their games against FaZe and Entropiq. The winless start is uncharacteristic of the Danish organization, who herald 4 total Major wins. Astralis have dug themselves in a hole with an 0-2 start. Though the journey is not yet over, the team will have to comeback much stronger day two.</p>
-                        <p><strong>Astralis’ abysmal start – Can they come back?</strong></p>
-                        <p>Astralis led off the PGL Major with their first game versus the Copenhagen Flames. Their fellow Danes were perhaps one of the most hyped dark horses coming into the tournament. The Flames dominated the single game on Overpass, winning 16-6.</p>
-                        <p>Nicoodoz and roeJ led the charge for the Flames, finding a combined 45 kills. Unfortunately for Astralis, the second game against Entropiq didn’t go any better for the team. Once again, Astralis was kept below 6 round wins as the CIS squad knocked their opponents down on Dust2.</p>
-                    </section>
-                </article>
-                <div class="divider"></div>
-                <article class="article-1" id="csgo-major">
-                    <h3>How and where to watch the Stockholm Major</h3>
-                    <section>
-                        <p>The PGL Major Stockholm will be the first CS:GO Major in nearly two years. This historic event will be one of the few LANs hosted in 2021. This historic event will take place from October 26th to November 7th. You can watch the Major from the official PGL Twitch account.</p>
-                        <img src="./images/csgo-major.jpg" alt="csgo">
-                        <p>The Major will follow the traditional format, being split into two distinct phases. The Challengers stage will be held from October 26th to the 29th. This section of the tournament will decide the 8 remaining spots in the PGL Major Stockholm main event. 16 teams will compete in a single round-robin group stage.</p>
-                        <p>After the Challengers stage, the main event will begin on October 30th and end on November 7th. Called the Champions stage, this portion of the event will feature a single elimination bracket with a $2 million prize pool.</p>
-                        <p>While not all of the teams have been decided, the Champions stage currently includes: Navi, G2, Team Liquid, Ninjas In Pyjamas, Vitality, Gambit, Furia, and Evil Geniuses. These teams were immediately slotted in through the RMRs while the rest will have to battle their way uphill to the main event.</p>
-                    </section>
-                </article>
-            </div>
-        </div>
-        <div class="patch-notes">
-            <h2>Patch Notes</h2>
-            <div class="container">
-                <article id="griefer">
-                    <h3>Valve cracks down on griefers in CS:GO update</h3>
-                    <section>
-                        <p>Valve has released a new update for Counter-Strike: Global Offensive, which signifies an increased crack down in dealing with griefers on the ladder. If players get reported for griefing Valve will now sanction them faster with warning and even bans.</p>
-                        <p>While some players are worried that mass reporting could be abused the new algorithm by Valve is stated to only consider “unusually high” amount of reportings to act upon.</p>
-                        <p>Hopefully this change leads to a better environment around CS:GO servers.</p>
-                    </section>
-                </article>
-                <div class="divider"></div>
-                <article id="maps">
-                    <h3>Updates to maps and ping issue solved for CS:GO in newest patch</h3>
-                    <section>
-                        <p>With the release of Broken Fang, CS:GO also implemented a brand new ping system, which now sees some changes following some issues. One of these issues was the abuse of pings, which highlighted enemies and allowed players to spam pings through smokes to find where enemies were hiding.</p>
-                        <p>Furthermore, a total of 4 maps received updates as well. These maps are Anubis, Apollo, Engage and Frostbite. The changes to Apollo and Frostbite were seemingly the most impactful ones, as some notorious exploits were removed, such as a spawn boost exploit, clipping issues and some spots where players were able to get stuck. Changes to Anubis and Engage were rather minor, fixing some grenade clips and a wallbang spot on the former while the latter received mostly fixes for visual issues alongside the removal of some boost spots.</p>
-                    </section>
-                </article>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="site-title">
-                <a href="#"><span class="logo">G</span><span class="news">N</span></a>
-                <span>GamerzNews</span>
-            </div>
-            <div class="games">
-                <h3>Games</h3>
-                <ul>
-                    <li><a href="#">CS:GO</a></li>
-                    <li><a href="./dota2.html">Dota 2</a></li>
-                    <li><a href="./tekken.html">Tekken 7</a></li>
-                </ul>
-            </div>
-            <div class="about">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="./about.html#us">About Us</a></li>
-                    <li><a href="./about.html#resources">Resources</a></li>
-                </ul>
-            </div>
-            <div class="contact" id="contact">
-                <h3>Contact Us</h3>
-                <form>
-                    <input type="text" name="name" placeholder="Your Email Address" required>
-                    <textarea name="message" placeholder="Message..."></textarea>
+            <nav>
+                <div class="dropdown">
                     <button>
-                        <img src="./images/icons/send.svg" alt="send-icon" height="16" width="16">
-                        &nbsp;Send
+                        <span class="active">Games</span
+                        ><img
+                            src="./images/icons/arrow-down.svg"
+                            alt="arrow-down"
+                        />
                     </button>
-                </form>
+                    <ul>
+                        <li><a href="#">CS:GO</a></li>
+                        <li><a href="./dota2.html">Dota&nbsp;2</a></li>
+                        <li><a href="./tekken.html">Tekken&nbsp;7</a></li>
+                        <li><a href="#">More...</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><a href="./about.html">About & Resources</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="site-banner">
+                <h1>CS<span class="colon">:</span><span>GO</span></h1>
+                <p>Counter-Strike: Global Offensive</p>
             </div>
-        </div>
-    </footer>
-</body>
+            <div class="updates">
+                <h2>Game Updates</h2>
+                <div class="items">
+                    <div class="item-1">
+                        <img src="./images/csgo/astralis.jpeg" alt="csgo" />
+                        <div class="item-details">
+                            <h3>
+                                Astralis goes winless in their first day at the
+                                PGL Major Stockholm 2021
+                            </h3>
+                            <a href="#astralis">
+                                Read More
+                                <img
+                                    src="./images/icons/double-arrow.svg"
+                                    alt="double-arrow"
+                                    height="22"
+                                    width="22"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <img src="./images/csgo-major.jpg" alt="csgo" />
+                        <div class="item-details">
+                            <h3>How and where to watch the Stockholm Major</h3>
+                            <a href="#csgo-major">
+                                Read More
+                                <img
+                                    src="./images/icons/double-arrow.svg"
+                                    alt="double-arrow"
+                                    height="22"
+                                    width="22"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-3">
+                        <img src="./images/csgo/griefer.jpg" alt="csgo" />
+                        <div class="item-details">
+                            <h3>
+                                Valve cracks down on griefers in CS:GO update
+                            </h3>
+                            <a href="#griefer">
+                                Read More
+                                <img
+                                    src="./images/icons/double-arrow.svg"
+                                    alt="double-arrow"
+                                    height="22"
+                                    width="22"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-4">
+                        <img src="./images/csgo/maps-pings.jpg" alt="csgo" />
+                        <div class="item-details">
+                            <h3>
+                                Updates to maps and ping issue solved for CS:GO
+                                in newest patch
+                            </h3>
+                            <a href="#maps">
+                                Read More
+                                <img
+                                    src="./images/icons/double-arrow.svg"
+                                    alt="double-arrow"
+                                    height="22"
+                                    width="22"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles">
+                <h2>Articles</h2>
+                <div class="container">
+                    <article class="article-1" id="astralis">
+                        <h3>
+                            Astralis goes winless in their first day at the PGL
+                            Major Stockholm 2021
+                        </h3>
+                        <section>
+                            <img
+                                class="astralis-img"
+                                src="./images/csgo/astralis.jpeg"
+                                alt="csgo"
+                            />
+                            <p>
+                                In their first day at the PGL Major Stockholm,
+                                Astralis fell short in both of their games
+                                against FaZe and Entropiq. The winless start is
+                                uncharacteristic of the Danish organization, who
+                                herald 4 total Major wins. Astralis have dug
+                                themselves in a hole with an 0-2 start. Though
+                                the journey is not yet over, the team will have
+                                to comeback much stronger day two.
+                            </p>
+                            <p>
+                                <strong
+                                    >Astralis’ abysmal start – Can they come
+                                    back?</strong
+                                >
+                            </p>
+                            <p>
+                                Astralis led off the PGL Major with their first
+                                game versus the Copenhagen Flames. Their fellow
+                                Danes were perhaps one of the most hyped dark
+                                horses coming into the tournament. The Flames
+                                dominated the single game on Overpass, winning
+                                16-6.
+                            </p>
+                            <p>
+                                Nicoodoz and roeJ led the charge for the Flames,
+                                finding a combined 45 kills. Unfortunately for
+                                Astralis, the second game against Entropiq
+                                didn’t go any better for the team. Once again,
+                                Astralis was kept below 6 round wins as the CIS
+                                squad knocked their opponents down on Dust2.
+                            </p>
+                        </section>
+                    </article>
+                    <div class="divider"></div>
+                    <article class="article-1" id="csgo-major">
+                        <h3>How and where to watch the Stockholm Major</h3>
+                        <section>
+                            <p>
+                                The PGL Major Stockholm will be the first CS:GO
+                                Major in nearly two years. This historic event
+                                will be one of the few LANs hosted in 2021. This
+                                historic event will take place from October 26th
+                                to November 7th. You can watch the Major from
+                                the official PGL Twitch account.
+                            </p>
+                            <img src="./images/csgo-major.jpg" alt="csgo" />
+                            <p>
+                                The Major will follow the traditional format,
+                                being split into two distinct phases. The
+                                Challengers stage will be held from October 26th
+                                to the 29th. This section of the tournament will
+                                decide the 8 remaining spots in the PGL Major
+                                Stockholm main event. 16 teams will compete in a
+                                single round-robin group stage.
+                            </p>
+                            <p>
+                                After the Challengers stage, the main event will
+                                begin on October 30th and end on November 7th.
+                                Called the Champions stage, this portion of the
+                                event will feature a single elimination bracket
+                                with a $2 million prize pool.
+                            </p>
+                            <p>
+                                While not all of the teams have been decided,
+                                the Champions stage currently includes: Navi,
+                                G2, Team Liquid, Ninjas In Pyjamas, Vitality,
+                                Gambit, Furia, and Evil Geniuses. These teams
+                                were immediately slotted in through the RMRs
+                                while the rest will have to battle their way
+                                uphill to the main event.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+            <div class="patch-notes">
+                <h2>Patch Notes</h2>
+                <div class="container">
+                    <article id="griefer">
+                        <h3>Valve cracks down on griefers in CS:GO update</h3>
+                        <section>
+                            <p>
+                                Valve has released a new update for
+                                Counter-Strike: Global Offensive, which
+                                signifies an increased crack down in dealing
+                                with griefers on the ladder. If players get
+                                reported for griefing Valve will now sanction
+                                them faster with warning and even bans.
+                            </p>
+                            <p>
+                                While some players are worried that mass
+                                reporting could be abused the new algorithm by
+                                Valve is stated to only consider “unusually
+                                high” amount of reportings to act upon.
+                            </p>
+                            <p>
+                                Hopefully this change leads to a better
+                                environment around CS:GO servers.
+                            </p>
+                        </section>
+                    </article>
+                    <div class="divider"></div>
+                    <article id="maps">
+                        <h3>
+                            Updates to maps and ping issue solved for CS:GO in
+                            newest patch
+                        </h3>
+                        <section>
+                            <p>
+                                With the release of Broken Fang, CS:GO also
+                                implemented a brand new ping system, which now
+                                sees some changes following some issues. One of
+                                these issues was the abuse of pings, which
+                                highlighted enemies and allowed players to spam
+                                pings through smokes to find where enemies were
+                                hiding.
+                            </p>
+                            <p>
+                                Furthermore, a total of 4 maps received updates
+                                as well. These maps are Anubis, Apollo, Engage
+                                and Frostbite. The changes to Apollo and
+                                Frostbite were seemingly the most impactful
+                                ones, as some notorious exploits were removed,
+                                such as a spawn boost exploit, clipping issues
+                                and some spots where players were able to get
+                                stuck. Changes to Anubis and Engage were rather
+                                minor, fixing some grenade clips and a wallbang
+                                spot on the former while the latter received
+                                mostly fixes for visual issues alongside the
+                                removal of some boost spots.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="site-title">
+                    <a href="#"
+                        ><span class="logo">G</span
+                        ><span class="news">N</span></a
+                    >
+                    <span>GamerzNews</span>
+                </div>
+                <div class="games">
+                    <h3>Games</h3>
+                    <ul>
+                        <li><a href="#">CS:GO</a></li>
+                        <li><a href="./dota2.html">Dota 2</a></li>
+                        <li><a href="./tekken.html">Tekken 7</a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="./about.html#us">About Us</a></li>
+                        <li><a href="./about.html#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="contact" id="contact">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Email Address"
+                            required
+                        />
+                        <textarea
+                            name="message"
+                            placeholder="Message..."
+                        ></textarea>
+                        <button>
+                            <img
+                                src="./images/icons/send.svg"
+                                alt="send-icon"
+                                height="16"
+                                width="16"
+                            />
+                            &nbsp;Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
