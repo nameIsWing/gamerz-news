@@ -18,7 +18,7 @@ main::after {
             rgba(16, 34, 54, 0.5)50%,
             rgba(10, 21, 34, 0.25) 100%
         ),
-        url("../../images/csgo.jpg");
+        url("../images/csgo.jpg");
     background-size: cover;
     background-position: center;
     height: calc(100% + 8rem);
