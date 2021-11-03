@@ -1,0 +1,119 @@
+footer {
+    background-color: var(--main-bg-black);
+    padding: 3rem 0;
+    z-index: 9;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 .5rem
+}
+footer .logo::after {
+    content: " ";
+    position: absolute;
+    top: 0.125rem;
+    left: .625rem;
+    height: 2.25rem;
+    width: 2.375rem;
+    background-color: var(--accent-darker);
+    z-index: -1;
+    border-radius: 0.5rem;
+}
+.site-title {
+    width: 20%;
+}
+.games {
+    width: 20%;
+}
+.about {
+    width: 20%;
+}
+.contact {
+    width: 40%;
+}
+.site-title > a {
+    display: block;
+    font-size: 1.75rem;
+    text-decoration: none;
+    padding: 0.875rem 1.25rem;
+    transform: translateY(0.1875rem);
+    font-family: var(--font-header);
+    color: var(--txtcolor-head);
+    white-space: nowrap;
+    transform: scale(1.25)
+}
+.site-title > span {
+    font-family: var(--font-header);
+    color: var(--txtcolor-head);
+    font-weight: 300;
+    font-size: .875rem;
+    letter-spacing: 1.25px;
+}
+footer h3 {
+    margin: 0 0 .25rem 0;
+}
+footer ul {
+    list-style: none;
+    font-family: var(--font-content);
+    letter-spacing: 1px;
+    line-height: 140%;
+}
+footer ul a {
+    text-decoration: none;
+    color: var(--txtcolor-content);
+    font-weight: 300;
+    font-size: .875rem;
+}
+footer ul a:hover {
+    text-decoration: underline;
+    color: var(--txtcolor-content);
+}
+footer .contact form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: .25rem
+}
+footer .contact form > input, footer .contact form > textarea {
+    font-family: var(--font-content);
+    caret-color: var(--txtcolor-head);
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background-color: var(--bg-lighter);
+    color: var(--txtcolor-head);
+    font-size: 1rem;
+    letter-spacing: .5px;
+}
+footer .contact form > textarea {
+    margin-top: .5rem;
+    resize: none;
+    height: 10ch;
+}
+footer form button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5rem;
+    align-self: flex-end;
+    width: max-content;
+    outline: none;
+    border: none;
+    border-radius: .25rem;
+    padding: .5rem 1rem .5rem .75rem;
+    font-family: var(--font-content);
+    text-transform: uppercase;
+    font-size: .875rem;
+    background-color: var(--accent);
+    color: var(--main-bg-black);
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+    /* width: 6rem; */
+}
+footer form button:hover {
+    filter: brightness(0.85);
+}

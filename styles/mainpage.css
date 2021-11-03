@@ -1,0 +1,176 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 4rem 1rem 5rem 1rem;
+    /* height: 100vh; */
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--bg-lighter);
+}
+main::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-image: linear-gradient(
+            180deg,
+            rgba(33, 35, 39, 0.9) 0%,
+            rgba(66, 35, 29, 0.452)50%,
+            rgb(23, 25, 27, 0.7) 100%
+        ),
+        url("../images/wide.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100% + 8rem);
+    width: 100%;
+    z-index: -1;
+    filter: saturate(.7);
+    mix-blend-mode: overlay;
+    opacity: 0.9;
+}
+main .main-content .news {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    max-width: 64rem;
+    margin: 0 auto;
+    width: 100%;
+}
+main .main-content > .news > h2 {
+    /* background-color: var(--bg-lighter); */
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    position: relative;
+    opacity: 0.75;
+}
+main .main-content > .news > h2::before,
+main .main-content > .news > h2::after {
+    position: absolute;
+    content: "";
+    top: 1.5rem;
+    width: 35vw;
+    max-width: 30rem;
+    height: 0.125rem;
+    mix-blend-mode: overlay;
+    background-color: var(--txtcolor-content);
+    z-index: -1;
+}
+main .main-content > .news > h2::before {
+    left: -0.5rem;
+    transform: translateX(-100%);
+}
+main .main-content > .news > h2::after {
+    right: -0.5rem;
+    transform: translateX(100%);
+}
+main .main-content .item-container {
+    border-radius: 0.25rem;
+    display: flex;
+    max-width: 64rem;
+    margin: 0 auto;
+    isolation: isolate;
+    padding: 1rem;
+    transition: background-color .15s;
+    z-index: 9;
+    background-color: var(--main-bg-black-transparent);
+    aspect-ratio: auto;
+    margin-bottom: 3rem;
+}
+main .main-content > .item-container:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+main .main-content .item-container .image-wrap {
+    flex-shrink: 0;
+    width: 36rem;
+    height: 16.5rem;
+    overflow: hidden;
+}
+main .main-content .item-container:hover .image-wrap > img {
+    transform: scale(1.05);
+}
+main .main-content .item-container:hover {
+    background-color: var(--main-bg-black-transparent-2);
+}
+main .main-content .item-container .image-wrap > img {
+    width: 100%;
+    height: auto;
+    transition: 0.2s ease-out;
+}
+main #tekken7 {
+    filter: saturate(0.6);
+}
+main .main-content .item-container .item-details {
+    padding: 0.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main .main-content .item-container .item-details > h3 {
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+main .main-content .item-container .item-details > p {
+    color: var(--txtcolor-content);
+    font-family: var(--font-content);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 160%;
+    letter-spacing: 0.5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+main .main-content .item-container .item-details > a {
+    background-color: var(--bg-lighter);
+    color: var(--txtcolor-content);
+    font-family: var(--font-content);
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: max-content;
+    align-self: flex-end;
+}
+main .main-content .item-container .item-details > a:hover {
+    filter: brightness(1.2);
+}
+main .also-read {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background-color: var(--main-bg-black-transparent);
+}
+main .also-read a {
+    text-decoration: none;
+}
+main .also-read a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--txtcolor-content);
+    text-underline-offset: .125rem;
+}
+main .also-read h2 {
+    margin: .5rem 0 2rem 0;
+}
+main .also-read h2, .also-read h3 {
+    font-weight: 300;
+}
+main .also-read h3 {
+    font-size: 1rem;
+    color: var(--txtcolor-content);
+    font-family: var(--font-content);
+    margin: 1.25rem;
+    letter-spacing: .5px;
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&family=Staatliches&display=swap');
+@import url('http://fonts.cdnfonts.com/css/kirsty');
+@import url("./media-queries.css");
+@import url("./footer.css");
+@import url("./header.css");
+
+:root {
+    --main-bg-black: #181b20;
+    --main-bg-black-transparent: rgb(24, 27, 32, .4);
+    --main-bg-black-transparent-2: rgb(24, 27, 32, .8);
+    --main-bg: hsl(218, 11%, 14%);
+    --main-bg-transparent: hsla(216, 11%, 14%, 0.5);
+    --main-bg-transparent-2: hsla(216, 11%, 14%, 0.75);
+    --bg-light: hsl(218, 10%, 21%);
+    --bg-lighter: hsl(210, 9%, 25%);
+    --accent: #cf553f;
+    --accent-darker: #b13f2b;
+    --txtcolor-head: #e5ded9;
+    --txtcolor-content: #cfc2b9;
+    --font-header: "Roboto Slab", serif;
+    --font-content: "Roboto", sans-serif;
+    --font-content-alt: 'Quicksand', sans-serif;
+    --font-banner: "Staatliches", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-block-start: 5rem;
+}
+body {
+    margin: 0;
+    background-color: var(--main-bg-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+nav li a,
+header > div > a {
+    font-family: var(--font-header);
+    color: var(--txtcolor-head);
+    margin: 0;
+    text-decoration: none;
+}
+p {
+    color: var(--txtcolor-content);
+    font-family: var(--font-content);
+    line-height: 170%;
+    font-weight: 300;
+}
+main .site-banner {
+    display: flex;
+    max-width: 64rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 8rem 0 8rem 0 !important;
+}
+main .site-banner > h1 {
+    /* font-family: var(--font-content); */
+    font-family: var(--font-banner);
+    font-size: clamp(3.25rem, 10vw, 5.25rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    mix-blend-mode: screen;
+    opacity: 0.8;
+}
+main .site-banner > h1 > span {
+    color: var(--accent);
+}
+main .site-banner > p {
+    color: var(--txtcolor-content);
+    font-family: var(--font-content);
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    letter-spacing: 1px;
+}
+.divider {
+    content: " ";
+    display: block;
+    width: min(10rem, 15vw);
+    height: 1px;
+    margin: 3rem 0 2.5rem 0;
+    background-color: var(--txtcolor-content);
+}
+.active {
+    display: inline-block;
+    background-color: var(--accent-darker);
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+}

@@ -1,0 +1,62 @@
+@media only screen and (max-width: 54rem) {
+    header {
+        flex-direction: column;
+    }
+    main .main-content .item-container {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    main .main-content > .item-container:nth-of-type(odd) {
+        flex-direction: column !important;
+    }
+    main .main-content .item-container .image-wrap {
+        flex-shrink: 1;
+        width: 90%;
+    }
+    main .main-content .item-container .item-details {
+        margin-top: 2rem;
+        gap: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-content > div {
+        margin-bottom: 2rem;
+        width: 80%
+    }
+    footer .footer-content > div {
+        text-align: center;
+    }
+    footer .footer-content > div > ul > li {
+        text-align: center;
+        padding: .25rem;
+    }
+    /* csgo page */
+    main .updates > .items {
+        display: grid;
+        grid-template-areas: 
+        "item-1 item-1"
+        "item-2 item-2"
+        "item-3 item-4" !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 10rem 10rem 12rem !important;
+        padding: 0 !important;
+    }
+    .updates > .items > .item-2 > img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+}
+@media only screen and (max-width: 40rem) {
+    .articles article img {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+}
