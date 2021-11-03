@@ -69,17 +69,17 @@ main .main-content > .news > h2::after {
     transform: translateX(100%);
 }
 main .main-content .item-container {
+    background-color: var(--main-bg-black-transparent);
     border-radius: 0.25rem;
     display: flex;
+    isolation: isolate;
+    min-width: 100%;
     max-width: 64rem;
     margin: 0 auto;
-    isolation: isolate;
+    margin-bottom: 3rem;
     padding: 1rem;
     transition: background-color .15s;
     z-index: 9;
-    background-color: var(--main-bg-black-transparent);
-    aspect-ratio: auto;
-    margin-bottom: 3rem;
 }
 main .main-content > .item-container:nth-of-type(odd) {
     flex-direction: row-reverse;
@@ -128,6 +128,7 @@ main .main-content .item-container .item-details > p {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    white-space: wrap;
 }
 main .main-content .item-container .item-details > a {
     background-color: var(--bg-lighter);

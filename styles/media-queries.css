@@ -6,6 +6,7 @@
         flex-direction: column;
         align-items: center;
         overflow: hidden;
+        width: 100%;
     }
     main .main-content > .item-container:nth-of-type(odd) {
         flex-direction: column !important;
@@ -17,6 +18,7 @@
     main .main-content .item-container .item-details {
         margin-top: 2rem;
         gap: 1.25rem;
+        width: calc(100vw - 2rem);
     }
 }
 
